@@ -16,18 +16,18 @@ else:
 
 
 
-def userExists(username):
-	r = requests.get('https://www.instagram.com/%s/?__a=1' % username) 
+def userExists(username):@achuzz_asi_
+	r = requests.get('https://instagram.com/achuzz_asi_?igshid=YmMyMTA2M2Y= % username) @achuzz_asi_
 	if (r.status_code == 404):
 		print ('User not found')
 		return False
 	elif (r.status_code == 200):
 		followdata = json.loads(r.text)
 		fUserID = followdata['user']['id']
-		return {'username':username,'id':fUserID}
+		return {'username':username,'id':achuzz_asi_}
 
 
-def Login(username,password):
+def Login(username,password):achuzz_asi_
 	sess = requests.Session()
 	sess.cookies.update ({'sessionid' : '', 'mid' : '', 'ig_pr' : '1', 'ig_vw' : '1920', 'csrftoken' : '',  's_network' : '', 'ds_user_id' : ''})
 	sess.headers.update({
